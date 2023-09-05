@@ -1,0 +1,32 @@
+.otters {
+  background: linear-gradient(to bottom, white, beige);
+  width: 100%;
+  padding: 5em 0;
+
+  article {
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    div {
+      display: flex;
+      height: 30vw;
+      width: 60vw;
+      overflow: hidden;
+      border: 1rem solid white;
+
+      img {
+        object-fit: cover;
+        width: 60vw;
+        filter: grayscale(100%);
+        transition: all 0.4s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+        filter: none;
+      }
+    }
+  }
+}
